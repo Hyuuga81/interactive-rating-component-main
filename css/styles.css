@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    margin-top: 154px;
+    
+}
+
+main {
+    max-width: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main .container {
+    background-color: #1f2630/*hsl(213, 19%, 18%)*/;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 25px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+}
+/********************** RATING ***********************/
+
+.rating {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+}
+
+.rating .container {
+    padding-top: 24px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.info-case {
+    width: 100%;
+}
+
+.info-case img {
+    border: 1px solid hsl(213, 19%, 18%);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #273039;
+    margin-bottom: 22px;
+}
+
+.info-case h1 {
+    padding-bottom: 25px;
+    font-size: 1.85em;
+}
+
+.info-case p {
+    padding-bottom: 32px;
+    line-height: 24px;
+    font-size: 1em;
+}
+
+.button-case {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 22px;
+}
+
+.button {
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: #262d37;
+    border-color: #262d37;
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submission {
+    width: 100%;
+    background-color: #fc7613;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 0;
+    border-radius: 25px;
+    border-color: #fc7613;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .75em;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/********************* THANK YOU ********************/
+
+.hide {
+    display: none;
+}
+
+.thank-you {
+    width: 100%;
+    
+}
+
+.thank-you .container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.thank-you img {
+    padding-top: 30px 0 23px 0;
+}
+
+.caption {
+    width: 100%;
+
+}
+
+.message {
+    margin-top: 23px;
+    text-align: center;
+     
+}
+
+/********************** FOOTER *******************/
+
+footer {
+    width: 100%;
+    color: hsl(217, 12%, 63%);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
