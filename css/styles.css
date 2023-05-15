@@ -1,29 +1,30 @@
+/******************* GENERAL STYLES **********************/
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body {
+    min-width: 375px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: #131518;
+    color: #969FAD;
     font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: hsl(216, 12%, 8%);
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Overpass', sans-serif;
 }
 
 main {
-    margin-top: 154px;
-    
-}
-
-main {
-    max-width: 375px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,24 +32,39 @@ main {
     flex-flow: row wrap;
 }
 
-main .container {
-    background-color: #1f2630/*hsl(213, 19%, 18%)*/;
-    width: 90%;
+section {
+    width: 87.2%;
+    margin: 154px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    border-radius: 25px;
+    /* background: #181E27; #232A34 */
+    background: linear-gradient(#232A34, #181E27);
+
+}
+
+.container {
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 h1 {
-    color: hsl(0, 0%, 100%);
+    color: #fff;
+    font-size: 1.71em;
+    font-weight: 700;
+    line-height: 30px;
+    width: 100%;
 }
 
-p {
-    color: hsl(217, 12%, 63%);
+section .hide {
+    display: none;
 }
-/********************** RATING ***********************/
+
+/******************* RATING *******************/
 
 .rating {
     width: 100%;
@@ -56,39 +72,22 @@ p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    box-sizing: border-box;
 }
 
 .rating .container {
-    padding-top: 24px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-.info-case {
-    width: 100%;
-}
-
-.info-case img {
-    border: 1px solid hsl(213, 19%, 18%);
-    padding: 10px;
+.rating img {
+    width: 14.3%;
+    padding: 13px;
+    background: #262E38;
     border-radius: 50%;
-    background-color: #273039;
-    margin-bottom: 22px;
+    margin: 24px 0 16px 0;
 }
 
-.info-case h1 {
-    padding-bottom: 25px;
-    font-size: 1.85em;
-}
-
-.info-case p {
-    padding-bottom: 32px;
-    line-height: 24px;
-    font-size: 1em;
+.rating h1 {
+    margin-bottom: 17px;
 }
 
 .button-case {
@@ -96,79 +95,33 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
-    margin-bottom: 22px;
+    margin: 24px 0;
 }
 
-.button {
-    padding: 15px 20px;
+.button-case button {
+    color: #7C8798;
+    background: #262E38;
+    border: 1px solid #262E38;
+    padding: 9px 18px;
     border-radius: 50%;
-    background-color: #262d37;
-    border-color: #262d37;
-    color: hsl(217, 12%, 63%);
-    cursor: pointer;
 }
 
-.button:hover {
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
-}
-
-.submission {
+input[type="submit"] {
     width: 100%;
-    background-color: #fc7613;
-    color: hsl(0, 0%, 100%);
-    padding: 15px 0;
-    border-radius: 25px;
-    border-color: #fc7613;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .75em;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    cursor: pointer;
+    margin-bottom: 32px;
+    padding: 12px 109px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1.87px;
+    color: #fff;
+    background: #FC7614;
+    border: 1px solid #FC7614;
 }
 
-/********************* THANK YOU ********************/
-
-.hide {
-    display: none;
-}
+/******************* THANK YOU *******************/
 
 .thank-you {
     width: 100%;
-    
-}
-
-.thank-you .container {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.thank-you img {
-    padding-top: 30px 0 23px 0;
-}
-
-.caption {
-    width: 100%;
-
-}
-
-.message {
-    margin-top: 23px;
-    text-align: center;
-     
-}
-
-/********************** FOOTER *******************/
-
-footer {
-    width: 100%;
-    color: hsl(217, 12%, 63%);
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
