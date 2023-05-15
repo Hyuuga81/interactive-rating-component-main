@@ -39,9 +39,8 @@ section {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    /* background: #181E27; #232A34 */
     background: linear-gradient(#232A34, #181E27);
-
+    border-radius: 5%;
 }
 
 .container {
@@ -99,11 +98,15 @@ section .hide {
 }
 
 .button-case button {
+    width: 15%;
     color: #7C8798;
     background: #262E38;
     border: 1px solid #262E38;
     padding: 9px 18px;
     border-radius: 50%;
+    line-height: 24px;
+    letter-spacing: 0.175px;
+    font-weight: 700;
 }
 
 input[type="submit"] {
@@ -116,6 +119,7 @@ input[type="submit"] {
     color: #fff;
     background: #FC7614;
     border: 1px solid #FC7614;
+    border-radius: 30px;
 }
 
 /******************* THANK YOU *******************/
@@ -126,4 +130,108 @@ input[type="submit"] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.thank-you img {
+    width: 56%;
+    margin: 34px 0 24px 0;
+}
+
+p.message {
+    padding: 5px 12px;
+    color: #FC7614;
+    background: #262E38;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.thank-you h1 {
+    text-align: center;
+    margin: 0 0 17px 0;
+}
+
+.thank-you p.content {
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+
+
+/********************* DESKTOP STYLES *******************/
+
+@media (min-width: 1200px) {
+    /******************* GENERAL STYLES *******************/
+
+    section {
+        width: 28.6%;
+        margin: 195px 0 189px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background: linear-gradient(#232A34, #181E27);
+        border-radius: 5%;
+    }
+
+    /******************* RATING *******************/
+
+    .rating img {
+        width: 14.1%;
+        margin: 32px 0 30px 0;
+    }
+
+    .rating h1 {
+        font-size: 2em;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    .rating p {
+        font-size: 1.1em;
+        line-height: 24px;
+    }
+
+    .button-case {
+        margin: 24px 0 32px 0;
+    }
+
+    .button-case button:hover {
+        background: #7C8798;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        color: #FC7614;
+        background: #FFF;
+        border: 1px solid #FFF;
+        cursor: pointer;
+    }
+
+    /******************* THANK YOU *******************/
+
+    .thank-you img {
+        width: 56%;
+        margin: 45px 0 32px 0;
+    }
+
+    .thank-you p.message {
+        font-size: 1.1em;
+        padding: 4px 20px;
+        line-height: 24px;
+        border-radius: 30px;
+        margin-bottom: 36px;
+    }
+
+    .thank-you h1 {
+        font-size: 2em;
+        line-height: 35px;
+        margin-bottom: 7px;
+    }
+
+    .thank-you p.content {
+        text-align: center;
+        margin-bottom: 45px;
+        line-height: 24px;
+    }
 }
