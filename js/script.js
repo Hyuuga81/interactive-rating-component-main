@@ -3,6 +3,7 @@ const thankYou = document.querySelector(".thank-you");
 const buttons = document.querySelectorAll("button");
 const score = document.querySelector(".result");
 const submit = document.querySelector(".decide");
+const content = document.querySelector(".content");
 
 buttons.forEach(function (button) {
     button.addEventListener("click", function() {
@@ -22,6 +23,9 @@ submit.addEventListener("click", function() {
 
 const insertItem = function (button) {
     score.innerText = button.innerText;
+    if (score.innerText < 3) {
+        content.innerText = `Sorry you have such a low evaluation of our service. What can we do to improve your experience in the future?`;
+    }
 }
 
 
