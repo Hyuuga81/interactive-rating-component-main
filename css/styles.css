@@ -210,6 +210,7 @@ p.message {
         background: #7C8798;
         color: #fff;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
 
     input[type="submit"]:hover {
