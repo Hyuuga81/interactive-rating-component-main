@@ -103,16 +103,15 @@ section .hide {
 }
 
 .button-case button {
-    width: 15%;
+    width: 48px;
     color: #7C8798;
     background: #262E38;
     border: 1px solid #262E38;
-    padding: 9px 18px;
+    padding: 9px;
     border-radius: 50%;
     line-height: 24px;
     letter-spacing: 0.175px;
-    font-weight: 700;
-    text-align: center;
+    margin: 0;
 }
 
 input[type="submit"] {
@@ -201,6 +200,12 @@ p.message {
         margin: 24px 0 32px 0;
     }
 
+    .button-case button {
+        letter-spacing: 0.2px;
+        font-size: 1.14em;
+        margin: 0;
+    }
+
     .button-case button:hover {
         background: #7C8798;
         color: #fff;
@@ -212,6 +217,7 @@ p.message {
         background: #FFF;
         border: 1px solid #FFF;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
 
     /******************* THANK YOU *******************/
