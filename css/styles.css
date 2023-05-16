@@ -103,7 +103,7 @@ section .hide {
 }
 
 .button-case button {
-    width: 15%;
+    width: 48px;
     color: #7C8798;
     background: #262E38;
     border: 1px solid #262E38;
@@ -113,6 +113,7 @@ section .hide {
     letter-spacing: 0.175px;
     font-weight: 700;
     text-align: center;
+    margin: 0;
 }
 
 input[type="submit"] {
